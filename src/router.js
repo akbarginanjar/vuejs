@@ -12,6 +12,9 @@ import Produk from "./views/tes/hari-5/Produk.vue";
 import ProfileProduk from "./views/tes/hari-5/ProfileProduk.vue";
 import HariSatuSampaiTiga from "./views/tes/Hari1-3.vue";
 import HariEmpat from "./views/tes/Hari4.vue";
+import Parent from "./views/tes/hari-6/Parent.vue";
+import Child from "./views/tes/hari-6/Child.vue";
+import HariTujuh from "./views/tes/Hari7.vue";
 
 Vue.use(Router);
 
@@ -105,6 +108,33 @@ export default new Router({
       components: {
         header: AppHeader,
         default: ProfileProduk,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/parent",
+      name: "parent",
+      components: {
+        header: AppHeader,
+        default: Parent,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/child",
+      name: "child",
+      components: {
+        header: AppHeader,
+        default: Child,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/hari7",
+      name: "hari7",
+      components: {
+        header: AppHeader,
+        default: HariTujuh,
         footer: AppFooter
       }
     }

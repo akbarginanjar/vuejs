@@ -15,8 +15,8 @@
             </div>
 
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                <router-link :class="{active: menu === 'hari1-3'}"  to="/hari1-3" class="nav-link text-white">Hari 1 - 3</router-link>
-                <router-link :class="{active: menu === 'hari4'}" to="/hari4" class="nav-link text-white">Hari 4</router-link>
+                <router-link :class="{active: menu === 'hari1-3'}"  to="/hari1-3" class="nav-link mr-3 text-white">Hari 1 - 3</router-link>
+                <router-link :class="{active: menu === 'hari4'}" to="/hari4" class="nav-link mr-3 text-white">Hari 4</router-link>
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
@@ -26,6 +26,15 @@
                     <router-link to="/produk" class="dropdown-item">Produk</router-link>
                     <router-link to="/profile-produk" class="dropdown-item">Profile Produk</router-link>
                 </base-dropdown>
+                <base-dropdown tag="li" class="nav-item">
+                    <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
+                        <i class="ni ni-collection d-lg-none"></i>
+                        <span class="nav-link-inner--text">Hari 6 <i class="fa fa-angle-down ml-1"></i></span>
+                    </a>
+                    <router-link to="/parent" class="dropdown-item">Parent</router-link>
+                    <router-link to="/child" class="dropdown-item">Child</router-link>
+                </base-dropdown>
+                <router-link :class="{active: menu === 'hari7'}"  to="/hari7" class="nav-link mr-3 text-white">Hari 7</router-link>
             </ul>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
